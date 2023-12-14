@@ -1,5 +1,5 @@
 # quickstart-web-npm-js
-
+## Note: I already add list product template into the web UI
 ## Setup license key
 1. Go to https://developer.deepar.ai
 2. Sign up
