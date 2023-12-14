@@ -1,0 +1,144 @@
+canvas.deepar {
+    position: fixed;
+    border: 0px none;
+    background-color: black;
+    display: block;
+    margin: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  #feet-text {
+    position: fixed;
+    top: 52%;
+    left: 9%;
+    text-align: left;
+    width: 100%;
+    color: #fff;
+  }
+
+  body {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  #loader-wrapper {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .loader {
+    display: inline-block;
+    position: relative;
+    top: 42%;
+    z-index: 1000;
+
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    background-color: #00f;
+
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.5s infinite ease-in-out;
+    animation: sk-scaleout 1.5s infinite ease-in-out;
+  }
+
+  @-webkit-keyframes sk-scaleout {
+    0% {
+      -webkit-transform: scale(0)
+    }
+
+    100% {
+      -webkit-transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes sk-scaleout {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+
+    100% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+nav{
+    z-index: 9999;
+}
+  .product-container{
+    width: 100%;
+    background-color: #fff !important;
+  }
+  .list-product {
+  margin-top:70px;
+  margin-left: 0px;
+
+}
+
+.product-card {
+    height: 250px;
+    width: 200px;
+  cursor: pointer;
+}
+
+.link-label {
+  margin: 0;
+  padding: 0;
+  text-underline-offset: unset;
+}
+
+.card-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1; /* Limiting to 2 lines */
+  width: 80%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-card .group {
+  margin-bottom: 1rem;
+}
+
+.img-span {
+  display: block;
+  height: 180px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.list-product .name-span {
+  width: 100%;
+  display: inline-block;
+  height: 34px;
+}
+.price{
+    text-decoration: none;
+    color: #000;
+}
+/*Filter*/
+.filter{
+    align-self: center;
+    height: 40px;
+    width:max-content;
+}
+.text-filter{
+    margin: 10px 15px 10px 15px;
+}
+.filter-region{
+    padding-top: 20px;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+}
