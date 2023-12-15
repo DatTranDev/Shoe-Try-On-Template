@@ -1,19 +1,24 @@
+/* 
+new-balance-574: https://nb.scene7.com/is/image/NB/wl574evb_nb_02_i?$pdpflexf2$&wid=440&hei=440
+ nike-airforce-1-lv8: https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-shoes-WrLlWX.png
+ nike-airforce1: https://lzd-img-global.slatic.net/g/p/b9655aae270f527efed0ec9ae9345e8d.jpg_720x720q80.jpg_.webp
+*/
 canvas.deepar {
     position: fixed;
     border: 0px none;
     background-color: black;
     display: block;
-    margin: auto;
+    margin-left: 50px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   #feet-text {
     position: fixed;
     top: 52%;
-    left: 9%;
+    left: 8%;
     text-align: left;
     width: 100%;
-    color: #fff;
+    color: #000;
   }
 
   body {
@@ -84,7 +89,7 @@ nav{
 }
 
 .product-card {
-    height: 250px;
+    height: 270px;
     width: 200px;
   cursor: pointer;
 }
@@ -99,7 +104,7 @@ nav{
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  -webkit-line-clamp: 1; /* Limiting to 2 lines */
+  -webkit-line-clamp: 2; /* Limiting to 2 lines */
   width: 80%;
   font-size: 16px;
   font-weight: 500;
@@ -118,11 +123,12 @@ nav{
 }
 
 .list-product .name-span {
-  width: 100%;
+  width: 150%;
   display: inline-block;
-  height: 34px;
+  height: 46px;
 }
 .price{
+    margin-top: 5px;
     text-decoration: none;
     color: #000;
 }
@@ -141,4 +147,7 @@ nav{
     position: fixed;
     background-color: #fff;
     z-index: 2;
+}
+a.cart-link{
+  color: inherit;
 }
