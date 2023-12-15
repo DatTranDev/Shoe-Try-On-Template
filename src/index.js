@@ -4,7 +4,7 @@ import * as deepar from 'deepar';
 console.log("Deepar version: " + deepar.version);
 
 const feetText = document.getElementById("feet-text");
-// Top-level await is not supported.
+const brandText = document.getElementById("brand-text");
 const selectedEffect = sessionStorage.getItem('selectedEffect');
 
 // If there's a selected effect, initialize DeepAR with that effect
@@ -34,11 +34,10 @@ async function initializeDeepar(effectName) {
       },
       hint: "footInit",
     }
-  });
-
+  }); 
   // Hide the loading screen.
   document.getElementById("loader-wrapper").style.display = "none";
-
+  brandText.style.display="flex";
   // Register for a callback when feet are detected.
   deepAR.callbacks.onFeetTracked = (leftFoot, rightFoot) => {
     const feetText = document.getElementById("feet-text");

@@ -11,7 +11,21 @@ canvas.deepar {
     margin-left: 50px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-
+#brand-text{
+  display: none;
+  align-items: center;
+  text-align: center;
+  top: 170px;
+  left: 440px;
+  position: fixed;
+  padding: 20px;
+  z-index: 9999;
+  height: 35px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+}
   #feet-text {
     position: fixed;
     top: 52%;
