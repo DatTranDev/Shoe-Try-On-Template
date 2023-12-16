@@ -72,3 +72,8 @@ productCards.forEach(card => {
   });
 });
 
+const startButton = document.getElementById('getStartBtn');
+
+  // Add a click event listener to the button
+startButton.addEventListener('click', function() {
+    window.location.href = 'getInfo.html';});

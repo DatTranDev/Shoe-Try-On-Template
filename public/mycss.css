@@ -166,3 +166,95 @@ nav{
 a.cart-link{
   color: inherit;
 }
+
+/* Index page */
+.index-page{
+  margin: auto;
+  text-align: center;
+}
+/*Privacy*/
+.privacy-page{
+  margin-top:60px;
+  margin-bottom:50px;
+}
+.privacy-page h1{
+  text-align:center;
+  margin-bottom:20px;
+}
+.index-page p{
+  margin: 5px;
+}
+.camera-block{
+  display: flex;
+  flex-direction: column;
+}
+/* Scanning */
+.scan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scan .feetprint{
+  position: relative;
+  width: 280px;
+  height: 280px;
+  background: url(gray.png);
+  background-size: 280px;
+  background-repeat: no-repeat; 
+}
+
+.scan .feetprint::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(cyan.png);
+  background-size: 280px;
+  background-repeat: no-repeat;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+  0%, 100%{
+    height: 0%;
+  }
+  50%{
+    height: 100%;
+  }
+}
+.scan .feetprint::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #48ffff;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 10px #48ffff) drop-shadow(0 0 30px #48ffff);
+  animation: animate_line 4s ease-in-out infinite;
+}
+@keyframes animate_line{
+  0%, 100%{
+    top: 0%;
+  }
+  50%{
+    top: 100%;
+  }
+}
+.scan h4{
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  color: #48ffff;
+}
+.text-group p{
+  font-size: 18px;
+}
+.text-bold{
+  font-weight: 600;
+}
