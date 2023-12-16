@@ -156,6 +156,7 @@ nav{
     margin: 10px 15px 10px 15px;
 }
 .filter-region{
+  margin-top: -5px;
     padding-top: 20px;
     width: 100%;
     position: fixed;
